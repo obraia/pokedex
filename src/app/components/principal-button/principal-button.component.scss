@@ -1,0 +1,17 @@
+.principal-button {
+  transform: scale(0.9);
+  padding: 5px 10px;
+  font-size: 18px;
+  border: 2px solid #3b4cca;
+  border-radius: 10px;
+  background-color: #3b4cca;
+  color: #ffffff;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1);
+    background-color: #ffffff;
+    background-image: none;
+    color: #3b4cca;
+  }
+}

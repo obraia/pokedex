@@ -3,7 +3,6 @@
   height: 100%;
   display: flex;
   align-items: center;
-  border: 1px solid blue;
 
   &__input {
     width: 100%;
@@ -11,18 +10,55 @@
     padding-inline: 10px 15px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border: 2px solid #3d3d3d;
-    font-weight: bold;
-    color: #3b4cca;
+    // border: 2px solid #3d3d3d;
+    // font-weight: bold;
+    color: #3d3d3d;
   }
 
   &__button {
     width: 40px;
     height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
     margin-left: -10px;
+    border-radius: 20px;
+    border: 2px solid #3d3d3d;
     background-color: #cc0000;
     color: #ffffff;
-    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+
+    &__circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      border: 2px solid #3d3d3d;
+      background-color: #ffffff;
+      z-index: 2;
+    }
+
+    &__line {
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      background-color: #3d3d3d;
+      z-index: 1;
+    }
+
+    &__bottom {
+      width: 100%;
+      height: 18px;
+      position: absolute;
+      align-self: flex-end;
+      background-color: #ffffff;
+      z-index: 0;
+    }
+
+    &:hover {
+      transform: rotate(360deg) scale(1.1);
+    }
   }
 }

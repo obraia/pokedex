@@ -3,16 +3,21 @@
   height: 60px;
   display: flex;
   justify-content: space-between;
-  padding: 5px;
-  background-color: #ffde00;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #3b4cca;
+  box-shadow: 5px 5px 11px -1px rgba(0, 0, 0, 0.22);
 
   &__logo {
-    width: 200px;
-    border: 1px solid red;
+    margin-right: 10px;
+    font-family: pokemon;
+    font-size: 2em;
+    line-height: 40px;
+    text-align: center;
+    color: #ffde00;
   }
 
   &__search {
-    width: 200px;
-    border: 1px solid red;
+    max-width: 260px;
   }
 }
